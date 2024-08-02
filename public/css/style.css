@@ -1,0 +1,140 @@
+body{
+	font-family: sans-serif;
+}
+.home-text{
+	color: green;
+}
+
+.top-nav a.active{
+	color:blue!important;
+}
+
+.auth-form{
+	background: #e9ffde;
+	border-radius: 20px;
+	padding:20px 50px 50px  50px;
+}
+
+
+.form-title{
+	color: green;
+	font-size: 20px;
+	font-weight: 600;
+	font-family: arial;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.form-group label{
+	color: #4c544a;
+}
+
+
+label.invalid{
+	color: red;
+	font-size: 13px;
+}
+
+input.invalid{
+	border:1px solid red;
+}
+input.success{
+	border:1px solid green;
+}
+
+.profile-nav a{
+ text-decoration: none;
+}
+
+.profile-nav .active a{
+   color: white!important;
+}
+
+#toast-success {
+	border-radius: 5px!important;
+	border-left: 4px solid rgb(22 163 74);
+	overflow: hidden;
+	transform: translateX(calc(100% + 30px));
+	transition: all 0.5s cubic-bezier(0.68,-0.55,0.265,1.35);
+}
+
+#toast-success.active{
+	transform: translateX(0%);
+}
+
+#toast-success .progress {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 3px;
+	width: 100%;
+	background: #ddd;
+}
+
+#toast-success .progress:before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(22 163 74);
+	animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+	100%{
+		right: 100%;
+	}
+}
+
+#toast-danger {
+	border-radius: 5px!important;
+	border-left: 4px solid rgb(252, 14, 14);
+	overflow: hidden;
+	transform: translateX(calc(100% + 30px));
+	transition: all 0.5s cubic-bezier(0.68,-0.55,0.265,1.35);
+}
+
+#toast-danger.active{
+	transform: translateX(0%);
+}
+
+#toast-danger .progress {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 3px;
+	width: 100%;
+	background: #ddd;
+}
+
+#toast-danger .progress:before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(252, 14, 14);
+	animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+	100%{
+		right: 100%;
+	}
+}
+
+.bot-info {
+	margin-left: 20px; /* Atur margin kiri agar posisinya tetap persis */
+}
+
+.bot-config p {
+	margin: 5px 0; /* Atur margin atas dan bawah untuk memisahkan setiap baris */
+}
+
+.bot-config code {
+	padding: 2px 5px; /* Atur padding pada code untuk memisahkan nilai dari environment variable */
+}
+
